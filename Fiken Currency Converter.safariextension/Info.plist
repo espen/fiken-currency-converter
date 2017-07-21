@@ -7,13 +7,13 @@
 	<key>Builder Version</key>
 	<string>12603.2.4</string>
 	<key>CFBundleDisplayName</key>
-	<string>Fiken Currency Converter</string>
+	<string>Fiken valutakonvertering</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.espen-antonsen.fiken-currency-converter</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.2</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Content</key>

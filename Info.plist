@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Espen Antonsen</string>
+	<key>Builder Version</key>
+	<string>12603.2.4</string>
+	<key>CFBundleDisplayName</key>
+	<string>Fiken Currency Converter</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.espen-antonsen.fiken-currency-converter</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>fiken-currency-converter.js</string>
+			</array>
+		</dict>
+		<key>Whitelist</key>
+		<array>
+			<string>https://fiken.no/foretak/*/handelsutkast/*</string>
+			<string>https://fiken.no/foretak/*/innboks/*</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Omregning av beløp i fremmed valuta til NOK basert på historisk valutakurs</string>
+	<key>DeveloperIdentifier</key>
+	<string>8E7QG7CVY7</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.fiken.no</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://inspired.no</string>
+</dict>
+</plist>

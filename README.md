@@ -6,4 +6,6 @@ Valutakurs leveres av https://fixer.io
 
 Brukes på eget ansvar.
 
+[Last ned her.](https://github.com/espen/fiken-currency-converter/raw/master/dist/Fiken%20Currency%20Converter.safariextz)
+
 Utviklet av Espen Antonsen.

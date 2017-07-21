@@ -36,8 +36,11 @@ function fikenCurrencyGetInvoiceDate() {
 
 function fikenCurrencyConvert() {
   var purchaseDate = prompt("Hvilken dato var kjøpet? (Format: YYYY-MM-DD)", fikenCurrencyGetInvoiceDate() );
+  if (purchaseDate == null) { return;}
   var currencyCode = prompt("Hvilken valuta (Eks: USD, EUR)", "USD");
+  if (currencyCode == null) { return;}
   var originalAmount = prompt("Beløp i " + currencyCode);
+  if (originalAmount == null) { return;}
   fikenCurrencyGetRate(purchaseDate, currencyCode).then( function(currencyRate) {
     fikenCurrencySetConvertedAmount( parseFloat(originalAmount.replace(',', '.') ) * currencyRate );
   } );

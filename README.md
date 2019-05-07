@@ -4,7 +4,9 @@ Dette er en Safari Extension som genererer en knapp øverst til høyre når man 
 
 [Last ned her.](https://github.com/espen/fiken-currency-converter/raw/master/dist/Fiken%20Currency%20Converter.safariextz)
 
-Valutakurser leveres av http://fixer.io.
+Valutakurser leveres av http://currencyconverterapi.com
+
+API-nøkkel registreres slik: window.CurrencyConverterAPI_key = 'APIKEY';
 
 Brukes på eget ansvar.
 

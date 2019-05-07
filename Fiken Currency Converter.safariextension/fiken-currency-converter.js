@@ -7,6 +7,10 @@ Icon by Musket (https://thenounproject.com/search/?q=currency%20conversion&i=453
 */
 
 window.addEventListener('load', function() {
+  if(!window.CurrencyConverterAPI_key) {
+    alert('No API key set up');
+    return;
+  }
   fikenCurrencyCreateButton();
 });
 
@@ -47,13 +51,13 @@ function fikenCurrencyConvert() {
 }
 
 function fikenCurrencyGetRate(purchaseDate, currencyCode) {
-  return fetch('https://api.fixer.io/' + purchaseDate + '?base=' + currencyCode).then(
+  return fetch('https://free.currencyconverterapi.com/api/v6/convert?compact=ultra&apiKey=' + window.CurrencyConverterAPI_key + '&date=' + purchaseDate + '&q=' + currencyCode + '_NOK').then(
     function(response) {
       return response.text();
     }
   ).then(
     function(text) {
-      return JSON.parse(text)['rates']['NOK'];
+      return JSON.parse(text)[currencyCode + '_NOK'][purchaseDate];
     }
   );
 }
